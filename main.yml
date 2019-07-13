@@ -1,0 +1,38 @@
+- hosts: webserver
+  # become_method: sudo
+  # become: true
+  tasks:
+    - name: Install git
+      apt:
+        name: git
+        state: present
+        # update_cache: yes
+    
+    - name : Clone Project
+      git:
+        repo: "https://github.com/soksanchhom/test-task.git"
+        version: "master"
+        dest: "/test-task"
+
+    - name: Build the image
+      command: docker build -t test-task /test-task
+
+    - name: Running the container
+      command: docker run -p 8000:80 -d --name test-task-8000 test-task
+
+    # - name: Build Docker image from Dockerfile
+    #   docker_image:
+    #     build: 
+    #       path: /test-task
+    #     name: test-task
+    #     source: build
+    
+    # - name: Running the container
+    #   docker_container:
+    #     image: test-task:latest
+    #     name: test-task
+    #     ports:
+    #       - "80:80"
+  roles:
+    - geerlingguy.docker
+  
