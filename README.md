@@ -23,7 +23,7 @@ sudo pip install ansible
 ansible-galaxy install geerlingguy.docker
 ```
 
-<p>How to run ansible</p>
+<h4>How to run ansible</h4>
 
 Before running main.yml, you have set variable value in main.yml or you can skip it
 ```
