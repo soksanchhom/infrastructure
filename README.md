@@ -8,7 +8,7 @@
 - Install git
 - Clone  project from repo https://github.com/soksanchhom/test-task.git
 - Build Image via Dockerfile in repo
-- Running Container built image
+- Running Container with built image
 
 <h4>If you doesn't have Ansible in your machine, please install via below command</h4>
 <p>How to install Ansible</p>
