@@ -4,11 +4,11 @@
 
 ## Step in main.yml file
 
-- [Install Docker via geerlingguy.docker]
-- [Install git]
-- [Clone  project from repo https://github.com/soksanchhom/test-task.git]
-- [Build Image via Dockerfile in repo]
-- [Running Container built image]
+- Install Docker via geerlingguy.docker
+- Install git
+- Clone  project from repo https://github.com/soksanchhom/test-task.git
+- Build Image via Dockerfile in repo
+- Running Container built image
 
 <h4>If you doesn't have Ansible in your machine, please install via below command</h4>
 <p>How to install Ansible</p>
