@@ -23,7 +23,7 @@ sudo pip install ansible
 ansible-galaxy install geerlingguy.docker
 ```
 
-<h4>How to run ansible</h4>
+<h4>How To Run Ansible</h4>
 
 Before running main.yml, you have set variable value in main.yml or you can skip it
 ```
@@ -31,9 +31,11 @@ Before running main.yml, you have set variable value in main.yml or you can skip
 ```
 Note: Port 80 is already running in server, it won't running if we choose duplicate port.
 
+<p>Then Running command below to run Ansible</p>
+
 ```
 ansible-playbook -i hosts main.yml
 ```
-<p>Run on Api</p>
+<h4>Test Result on Server</h4>
 
 http://51.15.126.60:port/timezones
