@@ -33,7 +33,6 @@ Note: Port 80 is already running in server, it won't running if we choose duplic
 
 ```
 ansible-playbook -i hosts main.yml
-
 ```
 <p>Run on Api</p>
 
